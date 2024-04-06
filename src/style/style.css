@@ -1,0 +1,11 @@
+@import url("./header.css");
+@import url("./container.css");
+@import url("./symbol.css");
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
