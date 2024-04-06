@@ -1,6 +1,12 @@
 .container {
+  padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
   height: 80vh;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
 }
