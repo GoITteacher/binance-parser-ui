@@ -9,7 +9,7 @@
 Для запуску проекту потрібно:
 
 - Node.js (рекомендована версія 14.x або вище)
-- BACKEND - [Git Repo](https://github.com/GoITteacher/binance-parser-api)
+- BACKEND - [binance-parser-api](https://github.com/GoITteacher/binance-parser-api)
 
 ## Встановлення
 
