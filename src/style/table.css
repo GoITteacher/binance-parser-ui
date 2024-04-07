@@ -1,0 +1,29 @@
+table.transactions {
+  width: 100%;
+  text-align: left;
+  color: white;
+  border-radius: 10px;
+}
+
+table.transactions td,
+table.transactions th {
+  border: 1px solid #000000;
+  padding: 6px 4px;
+}
+table.transactions tbody td {
+  font-size: 13px;
+}
+table.transactions thead {
+  background: #464646;
+  border-bottom: 2px solid #000000;
+}
+
+table.transactions thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(210, 209, 209);
+  text-align: left;
+}
+table.transactions tfoot td {
+  font-size: 14px;
+}

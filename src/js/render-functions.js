@@ -41,6 +41,7 @@ export function transactionTemplate({
   </td>
   <td>${amount}</td>
   <td>${price}$</td>
+  <td>${(amount * price).toFixed(2)}$</td>
   <td>${date.toLocaleDateString()}</td>
 </tr>`;
 }
