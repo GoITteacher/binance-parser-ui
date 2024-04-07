@@ -14,29 +14,75 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div class="header">
-      <form class="form js-form-symbol glass">
-        <select class="form-select" type="text" name="type">
-          <option selected value="HOT_COINS">Hot Coins</option>
-          <option value="TOP_GAINERS">Top Gainers</option>
-          <option value="TOP_LOSERS">Top Losers</option>
-          <option value="TOP_VOLUME">Top Volume</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Search</button>
-      </form>
+    <div class="glass">
+      <div class="header">
+        <form class="form js-form-symbol glass">
+          <select class="form-select" type="text" name="type">
+            <option selected value="HOT_COINS">Hot Coins</option>
+            <option value="TOP_GAINERS">Top Gainers</option>
+            <option value="TOP_LOSERS">Top Losers</option>
+            <option value="TOP_VOLUME">Top Volume</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
 
-      <form class="form js-form-excel glass">
-        <select class="form-select" type="text" name="type">
-          <option selected value="HOT_COINS">Hot Coins</option>
-          <option value="TOP_GAINERS">Top Gainers</option>
-          <option value="TOP_LOSERS">Top Losers</option>
-          <option value="TOP_VOLUME">Top Volume</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Save Excel</button>
-      </form>
+        <form class="form js-form-excel glass">
+          <select class="form-select" type="text" name="type">
+            <option selected value="HOT_COINS">Hot Coins</option>
+            <option value="TOP_GAINERS">Top Gainers</option>
+            <option value="TOP_LOSERS">Top Losers</option>
+            <option value="TOP_VOLUME">Top Volume</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Save Excel</button>
+        </form>
+      </div>
+
+      <div class="container container-symbols js-container"></div>
     </div>
 
-    <div class="container js-container"></div>
+    <div class="glass">
+      <div class="header">
+        <form class="form js-form-transaction glass">
+          <input
+            type="text"
+            name="symbol"
+            class="form-control"
+            placeholder="BTC"
+          />
+          <input
+            type="number"
+            name="amount"
+            class="form-control"
+            placeholder="Amount"
+            step="0.00001"
+          />
+
+          <select class="form-select" type="text" name="type">
+            <option selected value="DEPOSIT">Deposit</option>
+            <option value="WITHDRAW">Withdraw</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">
+            Create Transaction
+          </button>
+        </form>
+      </div>
+
+      <div class="container container-transaction">
+        <table class="transactions">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Amount</th>
+              <th>Price</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody class="js-transactions"></tbody>
+        </table>
+      </div>
+    </div>
+
     <div class="backdrop js-loader hidden">
       <span class="loader"></span>
     </div>
